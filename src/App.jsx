@@ -2,18 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import MyComponent from './components/learn/MyComponent'
+import {SecondComponent, ThirdComponent} from './components/learn/SecondComponent'
 function App() {
   const [count, setCount] = useState(0)
   // function myFunction()
   // {
   //     console.log(">>> Run my function<<<")
   // }
-  const MyComponent = ()=>{
-    return (
-    <div> eric & hoidanit update</div>
-    );
-  }
+
 const myFunction =() =>
   {
     console.log(">>> Run my arrow function<<<")
@@ -32,6 +29,8 @@ const myFunction =() =>
       </div>
       <h1>Hello world - Hoi dan IT</h1>
       <MyComponent/>
+      <SecondComponent/>
+      <ThirdComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
